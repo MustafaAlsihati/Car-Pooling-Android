@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraZoom="15" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_location_search"
+            android:layout_above="@id/filterMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="12dp"
+            android:tint="@android:color/white"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
+        <ImageButton
+            android:id="@+id/filterMap"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_above="@id/myLocation"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/white_border"
+            android:src="@drawable/ic_filter"
+            />
+
+        <ImageButton
+            android:id="@+id/myLocation"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_above="@id/request"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/white_border"
+            android:scaleType="center"
+            android:src="@drawable/ic_gps" />
+        <Button
+            android:id="@+id/request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/right_blue_broder"
+            android:text="pick point"
+            android:layout_margin="15dp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

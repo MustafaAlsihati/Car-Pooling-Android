@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="24dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ride Request Order" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/addressFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:textColor="#000"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="#000"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            <TextView
+                android:id="@+id/addressTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End"
+                android:textColor="#000"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tripDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/10/2020"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/genderTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="6dp"
+                android:paddingEnd="0dp"
+                android:text="Preferred"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/seatsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="6dp"
+                android:paddingEnd="0dp"
+                android:text="Seats available"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/startBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EDIT"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#4DBCD5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cancelBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:textColor="#F44336"
+                android:textAlignment="textEnd"
+                android:text="CANCEL"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

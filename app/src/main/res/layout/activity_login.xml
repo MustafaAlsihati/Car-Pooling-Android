@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/logo"
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="26sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emailField"
+            android:hint="Email"
+            android:textColor="#000000"
+            android:textColorHint="#ACACAC"
+            android:textCursorDrawable="@null"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/gray_border_style"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/passwordField"
+            android:textColor="#000000"
+            android:textColorHint="#ACACAC"
+            android:hint="Password"
+            android:textCursorDrawable="@null"
+            android:inputType="textPassword"
+            android:background="@drawable/gray_border_style"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/loginBtn"
+            android:textSize="16dp"
+            android:textColor="#FFF"
+            android:background="@drawable/button_style"
+            android:shadowColor="#A8A8A8"
+            android:shadowRadius="10"
+            android:textAllCaps="false"
+            android:text="Login"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/registerBtn"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:text="Register"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/resetPassBtn"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:text="Forgot Password? Click Here to Reset"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+</ScrollView>

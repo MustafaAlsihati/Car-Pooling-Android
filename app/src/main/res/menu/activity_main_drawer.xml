@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_findRide"
+            android:icon="@drawable/ic_search_black_48dp"
+            android:title="@string/menu_ride" />
+        <item
+            android:id="@+id/nav_lead"
+            android:icon="@drawable/ic_drive_eta_black_48dp"
+            android:title="@string/menu_lead" />
+        <item
+            android:id="@+id/nav_board"
+            android:icon="@drawable/ic_event_note_black_48dp"
+            android:title="@string/menu_my_board" />
+        <item
+            android:id="@+id/nav_locations"
+            android:icon="@drawable/ic_pin_drop_black_48dp"
+            android:title="@string/menu_locations" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_mood_black_48dp"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_favorite_black_48dp"
+            android:title="@string/menu_about" />
+    </group>
+
+</menu>

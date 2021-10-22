@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) PROG's Team (Mustafa AlSihati Team).
+  ~ This Project is currently an academic project for educational purposes.
+  ~ This Project May be used for benefits for the working team.
+  ~ Fully owned by the application developers.
+  -->
+
+<alpha
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromAlpha="0.0"
+    android:toAlpha="1.0"
+    android:duration="2000">
+
+</alpha>

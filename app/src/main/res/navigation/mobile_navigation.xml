@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_board">
+
+    <fragment
+        android:id="@+id/nav_findRide"
+        android:name="iau.ccsit.carpooling.ui.FindRide.FindFragment"
+        android:label="@string/menu_ride"
+        tools:layout="@layout/fragment_findride" />
+
+    <fragment
+        android:id="@+id/nav_lead"
+        android:name="iau.ccsit.carpooling.ui.Lead.LeadFragment"
+        android:label="@string/menu_lead"
+        tools:layout="@layout/fragment_lead" />
+
+    <fragment
+        android:id="@+id/nav_board"
+        android:name="iau.ccsit.carpooling.ui.MyBoard.MyBoardFragment"
+        android:label="@string/menu_my_board"
+        tools:layout="@layout/fragment_board" />
+
+    <fragment
+        android:id="@+id/nav_locations"
+        android:name="iau.ccsit.carpooling.ui.Locations.byPassFragment"
+        android:label="@string/menu_locations"
+        tools:layout="@layout/activity_map" />
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="iau.ccsit.carpooling.ui.Profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="iau.ccsit.carpooling.ui.About.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

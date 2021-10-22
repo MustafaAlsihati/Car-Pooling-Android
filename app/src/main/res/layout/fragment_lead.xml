@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".ui.Lead.Captain_2">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="24dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_circle_dot"/>
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/dash_line"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_circle_dot"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From"/>
+
+                    <TextView
+                        android:id="@+id/textVFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtFrom"
+                        android:enabled="false"
+                        android:text="Pickup point"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000" />
+
+                    <ImageView
+                        android:id="@+id/imgVFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_plus" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dashlineColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To"/>
+
+                    <TextView
+                        android:id="@+id/textVTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTo"
+                        android:text="Pick your destination"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000" />
+
+                    <ImageView
+                        android:id="@+id/imgVTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_plus" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <DatePicker
+            android:id="@+id/startDateTrip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button_style"
+            android:text="CONFIRM"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</LinearLayout>

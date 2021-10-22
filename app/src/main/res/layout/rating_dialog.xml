@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Rate Driver"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:progressTint="#FFB901"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="1" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/loginBtn"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/btn_style3"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="10"
+        android:text="Rate"/>
+
+</LinearLayout>

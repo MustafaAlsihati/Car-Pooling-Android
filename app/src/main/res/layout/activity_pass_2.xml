@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Passenger_2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="24dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_circle_dot"/>
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="55dp"
+                            android:background="@drawable/dash_line"
+                            android:layout_gravity="center"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_circle_dot"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/txtFrom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="From"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:text="PICKUP POINT"
+                                android:textColor="#000"
+                                android:layout_below="@id/txtFrom"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_plus"
+                                android:padding="8dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:focusable="true"/>
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/dashlineColor"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/txtTo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:text="AL-Riyadh"
+                                android:textColor="#000"
+                                android:layout_below="@id/txtTo"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_close"
+                                android:padding="8dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:focusable="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preferences"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"/>
+            <CheckBox
+                android:id="@+id/chkIos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Car"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"/>
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp">
+                <RadioButton
+                    android:id="@+id/radioNonSmoker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Non-Smoker"
+                    android:checked="true" />
+                <RadioButton
+                    android:id="@+id/radioSmoker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smoker" />
+                <RadioButton
+                    android:id="@+id/radioDoNotCare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I don't care" />
+            </RadioGroup>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_of_seat_available"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    android:id="@+id/seekbarResultTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="5"
+                android:layout_marginTop="8dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_prefrence"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:cardBackgroundColor="#ebebeb">
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/genderSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:entries="@array/gender_arrays" />
+            </androidx.cardview.widget.CardView>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Comment (Optional)"
+                android:lines="5"
+                android:layout_margin="12dp"
+                android:padding="16dp"
+                android:gravity="top"
+                android:background="@drawable/gray_border_style"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_style"
+                android:text="CONFIRM"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

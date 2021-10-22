@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the type of map"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radiogroupid">
+            <RadioButton
+                android:id="@+id/btnNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:textColor="#000"/>
+            <RadioButton
+                android:id="@+id/btnSatellite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Satellite"
+                android:textColor="#000"/>
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
